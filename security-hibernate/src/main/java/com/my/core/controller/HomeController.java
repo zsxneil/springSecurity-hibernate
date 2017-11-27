@@ -44,16 +44,7 @@ public class HomeController {
     @RequestMapping(value = "/admin", method = RequestMethod.GET)  
     public String adminPage(ModelMap model) {  
         model.addAttribute("user", getPrincipal());  
-        //测试事务
-//        User user = new User();
-//        user.setEmail("neil_zhang@kingdee.com");
-//        user.setFirstName("Zhang");
-//        user.setLastName("Xin");
-//        user.setPassword("neil");
-//        user.setState(State.ACTIVE.getState());
-//        user.setSsoId("zsxneil");
-//        userService.testTx(user);
-//        //userService.saveObject(user);
+  
         return "admin";  
     }  
     
